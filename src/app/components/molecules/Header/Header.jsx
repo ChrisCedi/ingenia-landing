@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { LinkHeader } from "@/components/atoms/LinkHeader";
+import { LinkHeader } from "@/app/atoms/LinkHeader";
 import { routes } from "./routes";
 
 export const Header = () => {
   return (
-    <div className="flex justify-between items-center fixed top-0 z-50 h-20 w-screen rounded-none  py-2 px-14 lg:px-24 lg:py-4  bg-white bg-opacity-50">
+    <div className="flex justify-between items-center fixed top-0 z-50 h-20 w-full rounded-none  py-2 px-14 lg:px-24 lg:py-4  bg-white bg-opacity-70">
       <Image
         src="/logo_ingenia.png"
         height="100"
@@ -26,7 +26,7 @@ export const Header = () => {
         priority
         alt="menu"
         src="/svg/menu-icon.svg"
-        className="xs:flex cursor-pointer transition-all duration-300 ease-in-out md:hidden"
+        className="flex cursor-pointer transition-all duration-300 ease-in-out md:hidden"
       />
     </div>
   );

@@ -1,12 +1,11 @@
-import Image from "next/image";
-import { Button, Navbar } from "@/app/components/MaterialTailwindComponent";
+import { MainContactSection } from "./molecules/MainContactSection/MainContactSection";
+import { ContactUs } from "./molecules/ContactUs/ContactUs";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen">
-      <div className="bg-orangle w-screen">
-        <p>Ingenia</p>
-      </div>
+    <main>
+      <MainContactSection />
+      <ContactUs />
     </main>
   );
 }

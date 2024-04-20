@@ -8,14 +8,31 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      screens: {
+        // xs: "180px",
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
       colors: {
-        orangle: "#f27220",
+        orange: "#f27220",
         grey: "#e6e6e6",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontSize: {
+        sm: "0.8rem",
+        base: "1rem",
+        xl: "1.25rem",
+        xxl: "1.35rem",
+        "2xl": "1.563rem",
+        "3xl": "1.953rem",
+        "4xl": "2.441rem",
+        "5xl": "3.052rem",
       },
     },
   },
