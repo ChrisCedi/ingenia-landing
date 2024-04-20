@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${roboto.className} antialiased w-screen`}>
+      <body className={`${roboto.className} antialiased`}>
         <Header />
         {children}
       </body>
