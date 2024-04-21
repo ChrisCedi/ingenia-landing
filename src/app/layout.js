@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { roboto } from "./ui/fonts";
 import { Header } from "@/components/molecules/Header/Header";
+import { Footer } from "@/components/molecules/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`${roboto.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
