@@ -1,7 +1,5 @@
-import { CountryCard } from "@/app/atoms/CountryCard";
 import { TermsFooter } from "@/app/atoms/TermsFooter";
 import { RoutesFooter } from "@/app/atoms/RoutesFooter";
-import { AddressCard } from "@/app/atoms/AddressCard";
 import { AddressFooter } from "@/app/atoms/AddressFooter";
 import { ButtonsMedia } from "@/app/atoms/ButtonsMedia";
 
