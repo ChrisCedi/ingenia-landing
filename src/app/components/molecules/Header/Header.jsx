@@ -1,9 +1,16 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import { LinkHeader } from "@/app/atoms/LinkHeader";
 import { routes } from "./routes";
+import { DrawerMenu } from "../DrawerMenu/DrawerMenu";
 
 export const Header = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
+  const handleCloseDrawer = () => {
+    setOpenDrawer(!openDrawer);
+  };
+
   return (
     <div className="flex justify-between items-center fixed top-0 z-50 h-20 w-full rounded-none  py-2 px-14 lg:px-24 lg:py-4  bg-white bg-opacity-70">
       <Image
@@ -21,6 +28,7 @@ export const Header = () => {
         <LinkHeader route={routes.manifest}>MANIFIESTO</LinkHeader>
       </div>
       <Image
+        onClick={handleCloseDrawer}
         height={20}
         width={20}
         priority
@@ -28,6 +36,7 @@ export const Header = () => {
         src="/svg/menu-icon.svg"
         className="flex cursor-pointer transition-all duration-300 ease-in-out md:hidden"
       />
+      <DrawerMenu openDrawer={openDrawer} closeDrawer={handleCloseDrawer} />
     </div>
   );
 };

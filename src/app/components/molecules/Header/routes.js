@@ -1,6 +1,6 @@
 export const routes = {
-  about: "/about",
-  work: "/work",
+  about: "/AboutUs",
+  work: "/OurWork",
   contact: "/",
-  manifest: "/manifest",
+  manifest: "/Manifest",
 };
